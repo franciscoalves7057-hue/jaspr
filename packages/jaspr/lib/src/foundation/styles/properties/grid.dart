@@ -169,6 +169,12 @@ class TrackRepeat {
   static const TrackRepeat autoFit = TrackRepeat._('auto-fit');
 }
 
+
+/// Represents the CSS `gap` property.
+///
+/// Use [Gap.all] to set the same gap for rows and columns, or construct a
+/// [Gap] with `row` and/or `column` to control `row-gap` and `column-gap`
+/// independently. Values are [Unit]s.
 class Gap {
   const Gap({this.row, this.column});
 
@@ -191,6 +197,11 @@ class Gap {
   }
 }
 
+
+/// Represents the CSS `justify-items` property used in grid and flex layouts.
+///
+/// Controls alignment of items along the inline (row) axis within their
+/// grid area or flex item. Choose values like `start`, `center`, `stretch`.
 enum JustifyItems {
   // Basic keywords/values
   normal('normal'),

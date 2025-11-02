@@ -16,9 +16,12 @@
 - Global `@css` styles from other packages will no longer be included automatically. To include them, import the file where they are defined.
 
 - **Breaking**: `Transition`'s `duration` and `delay` are now of type `Duration` instead of `double`.
+- Added `ms` and `seconds` extensions to `int` for simple conversion to `Duration`.
+
 - **Breaking**: Changed `FontStyle.obliqueAngle` to accept `Angle` instead of `double`.
 
-- Added `ms` and `seconds` extensions to `int` for simple conversion to `Duration`.
+- Added `animation` and `quotes` CSS properties to `Styles`.
+- Added `Curve.linearFn()` easing function.
 - Added `initial`, `inherit`, `revert`, `revertLayer` and `unset` to `Transition`.
 - Added `none`, `initial`, `revert`, `revertLayer` and `unset` to `TextShadow` and `BoxShadow`.
 - Allow nesting non-empty `Filter.list` inside each other.
